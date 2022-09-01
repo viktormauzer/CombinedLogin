@@ -14,6 +14,9 @@
 		DB82A9C528BFB965000AD429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB82A9C328BFB965000AD429 /* LaunchScreen.storyboard */; };
 		DB82A9CD28BFB9E9000AD429 /* EntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82A9CC28BFB9E9000AD429 /* EntryViewModel.swift */; };
 		DB82A9D028BFBBDE000AD429 /* TextFieldViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82A9CF28BFBBDE000AD429 /* TextFieldViews.swift */; };
+		DBA44F1828C0D1BE00E71329 /* LayoutViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA44F1728C0D1BE00E71329 /* LayoutViews.swift */; };
+		DBA44F1A28C0D67200E71329 /* ButtonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA44F1928C0D67200E71329 /* ButtonViews.swift */; };
+		DBA44F1C28C0DA5F00E71329 /* Ext+LoadEntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA44F1B28C0DA5F00E71329 /* Ext+LoadEntryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		DB82A9C628BFB965000AD429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB82A9CC28BFB9E9000AD429 /* EntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewModel.swift; sourceTree = "<group>"; };
 		DB82A9CF28BFBBDE000AD429 /* TextFieldViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViews.swift; sourceTree = "<group>"; };
+		DBA44F1728C0D1BE00E71329 /* LayoutViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViews.swift; sourceTree = "<group>"; };
+		DBA44F1928C0D67200E71329 /* ButtonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViews.swift; sourceTree = "<group>"; };
+		DBA44F1B28C0DA5F00E71329 /* Ext+LoadEntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+LoadEntryVC.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +78,9 @@
 		DB82A9CE28BFBA07000AD429 /* EntryVC */ = {
 			isa = PBXGroup;
 			children = (
-				DB82A9BC28BFB963000AD429 /* EntryViewController.swift */,
 				DB82A9CC28BFB9E9000AD429 /* EntryViewModel.swift */,
+				DB82A9BC28BFB963000AD429 /* EntryViewController.swift */,
+				DBA44F1B28C0DA5F00E71329 /* Ext+LoadEntryVC.swift */,
 			);
 			path = EntryVC;
 			sourceTree = "<group>";
@@ -82,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				DB82A9CF28BFBBDE000AD429 /* TextFieldViews.swift */,
+				DBA44F1728C0D1BE00E71329 /* LayoutViews.swift */,
+				DBA44F1928C0D67200E71329 /* ButtonViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,11 +165,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA44F1A28C0D67200E71329 /* ButtonViews.swift in Sources */,
 				DB82A9BD28BFB963000AD429 /* EntryViewController.swift in Sources */,
 				DB82A9CD28BFB9E9000AD429 /* EntryViewModel.swift in Sources */,
+				DBA44F1828C0D1BE00E71329 /* LayoutViews.swift in Sources */,
 				DB82A9D028BFBBDE000AD429 /* TextFieldViews.swift in Sources */,
 				DB82A9B928BFB963000AD429 /* AppDelegate.swift in Sources */,
 				DB82A9BB28BFB963000AD429 /* SceneDelegate.swift in Sources */,
+				DBA44F1C28C0DA5F00E71329 /* Ext+LoadEntryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

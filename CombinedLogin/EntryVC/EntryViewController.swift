@@ -8,30 +8,27 @@
 import UIKit
 
 class EntryViewController: UIViewController {
+    var nameField: UITextField!
+    var usernameField: UITextField!
+    var passwordField: UITextField!
+    var confirmPasswordField: UITextField!
+    var submitButton: UIButton!
     
     let vm = EntryViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupViewController()
     }
     
-    override func loadView() {
-        view = UIView()
-        view.backgroundColor = .systemBackground
-        
-        let nameField = TextFieldViews.nameField
-        nameField.translatesAutoresizingMaskIntoConstraints = false
-        
-        
-        view.addSubview(nameField)
-        
-        NSLayoutConstraint.activate([
-            nameField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            nameField.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
+    func setupViewController() {
+        // do work
     }
-
+    
+    @objc
+    func submitButtonPressed(_ sender: UIButton) {
+        print("submit button pressed")
+    }
 
 }
 
