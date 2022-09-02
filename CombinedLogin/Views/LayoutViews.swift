@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 struct LayoutViews {
+    static var confirmPasswordIcon: UIImageView?
+    
     static var fullScreenScrollView: UIScrollView {
         let scrollView = UIScrollView()
         let screenRect = UIScreen.main.bounds
@@ -61,6 +63,7 @@ struct LayoutViews {
             if let rightIconImageView = rightIconImageView {
                 rightIconImageView.image = UIImage(systemName: rightIcon)
                 stackView.addArrangedSubview(rightIconImageView)
+                confirmPasswordIcon = rightIconImageView
                 
                 NSLayoutConstraint.activate([
                     rightIconImageView.widthAnchor.constraint(equalToConstant: 30),

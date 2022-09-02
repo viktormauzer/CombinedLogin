@@ -35,6 +35,7 @@ struct TextFieldViews {
         view.placeholder = "Password"
         view.font = UIFont.customFont(size: 12)
         view.addDoneButtonOnKeyboard()
+        view.isSecureTextEntry = true
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }
