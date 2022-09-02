@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB38D01228C22B940010B2EA /* Syncopate-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB38D01128C22B940010B2EA /* Syncopate-Regular.ttf */; };
+		DB38D01428C22D020010B2EA /* Ext+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB38D01328C22D020010B2EA /* Ext+Font.swift */; };
+		DB38D01628C245D10010B2EA /* Ext+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB38D01528C245D10010B2EA /* Ext+TextField.swift */; };
+		DB38D01928C246B00010B2EA /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB38D01828C246B00010B2EA /* Ext+UIColor.swift */; };
 		DB82A9B928BFB963000AD429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82A9B828BFB963000AD429 /* AppDelegate.swift */; };
 		DB82A9BB28BFB963000AD429 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82A9BA28BFB963000AD429 /* SceneDelegate.swift */; };
 		DB82A9BD28BFB963000AD429 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82A9BC28BFB963000AD429 /* EntryViewController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB38D01128C22B940010B2EA /* Syncopate-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Syncopate-Regular.ttf"; sourceTree = "<group>"; };
+		DB38D01328C22D020010B2EA /* Ext+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Font.swift"; sourceTree = "<group>"; };
+		DB38D01528C245D10010B2EA /* Ext+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+TextField.swift"; sourceTree = "<group>"; };
+		DB38D01828C246B00010B2EA /* Ext+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColor.swift"; sourceTree = "<group>"; };
 		DB82A9B528BFB963000AD429 /* CombinedLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombinedLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB82A9B828BFB963000AD429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB82A9BA28BFB963000AD429 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB38D01028C22B7F0010B2EA /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DB38D01128C22B940010B2EA /* Syncopate-Regular.ttf */,
+				DB38D01328C22D020010B2EA /* Ext+Font.swift */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		DB38D01728C245E20010B2EA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DB38D01528C245D10010B2EA /* Ext+TextField.swift */,
+				DB38D01828C246B00010B2EA /* Ext+UIColor.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		DB82A9AC28BFB963000AD429 = {
 			isa = PBXGroup;
 			children = (
@@ -66,9 +92,11 @@
 			children = (
 				DB82A9B828BFB963000AD429 /* AppDelegate.swift */,
 				DB82A9BA28BFB963000AD429 /* SceneDelegate.swift */,
+				DB38D01728C245E20010B2EA /* Utility */,
 				DB82A9D128BFBBE5000AD429 /* Views */,
 				DB82A9CE28BFBA07000AD429 /* EntryVC */,
 				DB82A9C128BFB965000AD429 /* Assets.xcassets */,
+				DB38D01028C22B7F0010B2EA /* fonts */,
 				DB82A9C328BFB965000AD429 /* LaunchScreen.storyboard */,
 				DB82A9C628BFB965000AD429 /* Info.plist */,
 			);
@@ -153,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB38D01228C22B940010B2EA /* Syncopate-Regular.ttf in Resources */,
 				DB82A9C528BFB965000AD429 /* LaunchScreen.storyboard in Resources */,
 				DB82A9C228BFB965000AD429 /* Assets.xcassets in Resources */,
 			);
@@ -169,7 +198,10 @@
 				DB82A9BD28BFB963000AD429 /* EntryViewController.swift in Sources */,
 				DB82A9CD28BFB9E9000AD429 /* EntryViewModel.swift in Sources */,
 				DBA44F1828C0D1BE00E71329 /* LayoutViews.swift in Sources */,
+				DB38D01428C22D020010B2EA /* Ext+Font.swift in Sources */,
+				DB38D01628C245D10010B2EA /* Ext+TextField.swift in Sources */,
 				DB82A9D028BFBBDE000AD429 /* TextFieldViews.swift in Sources */,
+				DB38D01928C246B00010B2EA /* Ext+UIColor.swift in Sources */,
 				DB82A9B928BFB963000AD429 /* AppDelegate.swift in Sources */,
 				DB82A9BB28BFB963000AD429 /* SceneDelegate.swift in Sources */,
 				DBA44F1C28C0DA5F00E71329 /* Ext+LoadEntryVC.swift in Sources */,

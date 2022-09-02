@@ -22,7 +22,7 @@ class EntryViewController: UIViewController {
     }
     
     func setupViewController() {
-        // do work
+        submitButton.isEnabled = false
     }
     
     @objc
