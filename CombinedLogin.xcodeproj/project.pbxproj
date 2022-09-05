@@ -21,6 +21,7 @@
 		DBA44F1828C0D1BE00E71329 /* LayoutViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA44F1728C0D1BE00E71329 /* LayoutViews.swift */; };
 		DBA44F1A28C0D67200E71329 /* ButtonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA44F1928C0D67200E71329 /* ButtonViews.swift */; };
 		DBA44F1C28C0DA5F00E71329 /* Ext+LoadEntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA44F1B28C0DA5F00E71329 /* Ext+LoadEntryVC.swift */; };
+		DBBE48B928C5FFD700608A8F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE48B828C5FFD700608A8F /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		DBA44F1728C0D1BE00E71329 /* LayoutViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViews.swift; sourceTree = "<group>"; };
 		DBA44F1928C0D67200E71329 /* ButtonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViews.swift; sourceTree = "<group>"; };
 		DBA44F1B28C0DA5F00E71329 /* Ext+LoadEntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+LoadEntryVC.swift"; sourceTree = "<group>"; };
+		DBBE48B828C5FFD700608A8F /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				DB38D01728C245E20010B2EA /* Utility */,
 				DB82A9D128BFBBE5000AD429 /* Views */,
 				DB82A9CE28BFBA07000AD429 /* EntryVC */,
+				DBBE48BA28C5FFDB00608A8F /* DashboardVC */,
 				DB82A9C128BFB965000AD429 /* Assets.xcassets */,
 				DB38D01028C22B7F0010B2EA /* fonts */,
 				DB82A9C328BFB965000AD429 /* LaunchScreen.storyboard */,
@@ -121,6 +124,14 @@
 				DBA44F1928C0D67200E71329 /* ButtonViews.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DBBE48BA28C5FFDB00608A8F /* DashboardVC */ = {
+			isa = PBXGroup;
+			children = (
+				DBBE48B828C5FFD700608A8F /* DashboardViewController.swift */,
+			);
+			path = DashboardVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 				DB38D01428C22D020010B2EA /* Ext+Font.swift in Sources */,
 				DB38D01628C245D10010B2EA /* Ext+TextField.swift in Sources */,
 				DB82A9D028BFBBDE000AD429 /* TextFieldViews.swift in Sources */,
+				DBBE48B928C5FFD700608A8F /* DashboardViewController.swift in Sources */,
 				DB38D01928C246B00010B2EA /* Ext+UIColor.swift in Sources */,
 				DB82A9B928BFB963000AD429 /* AppDelegate.swift in Sources */,
 				DB82A9BB28BFB963000AD429 /* SceneDelegate.swift in Sources */,

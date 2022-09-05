@@ -13,7 +13,7 @@ struct TextFieldViews {
         let view = UITextField()
         view.textContentType = .name
         view.placeholder = "Full Name"
-        view.font = UIFont.customFont(size: 12)
+        view.font = UIFont.customFont(size: 14)
         view.addDoneButtonOnKeyboard()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -23,7 +23,7 @@ struct TextFieldViews {
         let view = UITextField()
         view.textContentType = .username
         view.placeholder = "Username"
-        view.font = UIFont.customFont(size: 12)
+        view.font = UIFont.customFont(size: 14)
         view.addDoneButtonOnKeyboard()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -33,7 +33,7 @@ struct TextFieldViews {
         let view = UITextField()
         view.textContentType = .password
         view.placeholder = "Password"
-        view.font = UIFont.customFont(size: 12)
+        view.font = UIFont.customFont(size: 14)
         view.addDoneButtonOnKeyboard()
         view.isSecureTextEntry = true
         view.translatesAutoresizingMaskIntoConstraints = false

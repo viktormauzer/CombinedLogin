@@ -28,10 +28,13 @@ extension EntryViewController {
         
         let formView = LayoutViews.formView(nameField, usernameField, passwordField, confirmPasswordField, submitButton)
         
+        loadingView = LayoutViews.loadingScreen
+        
         view.addSubview(backgroundImage)
         view.addSubview(scrollView)
         scrollView.addSubview(formView)
         scrollView.addSubview(logoImageView)
+        view.addSubview(loadingView)
         
         
         NSLayoutConstraint.activate([
@@ -52,7 +55,12 @@ extension EntryViewController {
             logoImageView.heightAnchor.constraint(equalToConstant: 100),
             logoImageView.widthAnchor.constraint(equalToConstant: 200),
             logoImageView.bottomAnchor.constraint(equalTo: formView.topAnchor, constant: -20),
-            logoImageView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor)
+            logoImageView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
+            
+            loadingView.topAnchor.constraint(equalTo: view.topAnchor),
+            loadingView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            loadingView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            loadingView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
 }

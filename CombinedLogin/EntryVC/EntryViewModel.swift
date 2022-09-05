@@ -32,9 +32,8 @@ final class EntryViewModel {
     func registerUser() {
         // pretending to do a network call
         isLoading = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
             self.isLoading = false
-            print("success")
         }
     }
 }

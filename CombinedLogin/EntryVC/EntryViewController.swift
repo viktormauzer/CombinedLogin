@@ -14,6 +14,7 @@ class EntryViewController: UIViewController {
     var passwordField: UITextField!
     var confirmPasswordField: UITextField!
     var submitButton: UIButton!
+    var loadingView: UIView!
     
     private var subscribers: [AnyCancellable] = []
     
@@ -25,6 +26,7 @@ class EntryViewController: UIViewController {
     }
     
     func setupViewController() {
+        loadingView.isHidden = true
         
         nameField.textPublisher
             .sink { [weak self] name in
@@ -65,10 +67,12 @@ class EntryViewController: UIViewController {
         
         vm.$isLoading
             .sink { [weak self] isLoading in
+                guard let self = self else { return }
                 if isLoading {
-                    self?.submitButton.setTitle("Loading", for: .normal)
+                    self.loadingView.isHidden = false
                 } else {
-                    self?.submitButton.setTitle("Register", for: .normal)
+                    self.loadingView.isHidden = true
+                    self.openDashboard()
                 }
             }
             .store(in: &subscribers)
@@ -77,6 +81,15 @@ class EntryViewController: UIViewController {
     @objc
     func submitButtonPressed(_ sender: UIButton) {
         vm.registerUser()
+    }
+    
+    func openDashboard() {
+        let navigationController = UINavigationController()
+        let dashboardController = DashboardViewController()
+        navigationController.pushViewController(dashboardController, animated: true)
+        navigationController.modalPresentationStyle = .fullScreen
+        navigationController.modalTransitionStyle = .flipHorizontal
+        self.show(navigationController, sender: self)
     }
 
 }
